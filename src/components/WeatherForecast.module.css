@@ -1,0 +1,130 @@
+.weatherCard {
+  background: #f8fbff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  padding: 2rem 2.5rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  transition: box-shadow 0.2s;
+}
+
+.weatherInputContainer {
+  margin-bottom: 1.5rem;
+}
+
+.inputWrapper {
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+}
+
+.locationIcon {
+  color: #1976d2;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.weatherInput {
+  border: none;
+  outline: none;
+  padding: 0.9rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px 0 0 8px;
+  background: #fff;
+  flex: 1;
+  transition: box-shadow 0.2s;
+}
+
+.weatherInput:focus {
+  box-shadow: 0 0 0 2px #4facfe;
+}
+
+.searchButton {
+  background: #ffc107;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  padding: 0.9rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchButton:hover {
+  background: #ffb300;
+  transform: scale(1.07);
+}
+
+.searchIcon {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.weatherTableContainer {
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.weatherTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.weatherTable th,
+.weatherTable td {
+  padding: 0.9rem 1.1rem;
+  text-align: center;
+}
+
+.weatherTable th {
+  background: #e3f2fd;
+  color: #1976d2;
+  font-weight: 600;
+}
+
+.weatherTable tr:nth-child(even) {
+  background: #f1f8ff;
+}
+
+.weatherTable tr:nth-child(odd) {
+  background: #fff;
+}
+
+.weatherTable tr {
+  transition: background 0.2s;
+}
+
+.weatherTable tr:hover {
+  background: #e3f2fd;
+}
+
+.loadingSpinner {
+  border: 3px solid #e3f2fd;
+  border-top: 3px solid #1976d2;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  animation: spin 1s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+.errorMessage {
+  color: #e53935;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 1rem;
+} 
